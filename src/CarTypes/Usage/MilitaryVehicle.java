@@ -2,14 +2,14 @@ package CarTypes.Usage;
 
 import CarTypes.CarTemplate;
 
-public class MilitaryVehicle extends CarTemplate {
+public class MilitaryVehicle extends CarTemplate implements UseField {
     @Override
     protected String getCarType() {
         return "Military Vehicle";
     }
 
     @Override
-    protected int getNumberOfSeats() {
+    public int getNumberOfSeats() {
         return 7;
     }
 

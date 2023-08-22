@@ -1,8 +1,10 @@
 package CarComponents.Tire;
 
+import CarComponents.CarComponent;
+
 // Tire interface and its implementations
-public interface Tire {
-    void rotate();
-    double getPrice();
+public abstract class Tire implements CarComponent {
+    abstract void rotate();
+    abstract double getPrice();
 }
 

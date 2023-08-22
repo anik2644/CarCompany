@@ -6,11 +6,14 @@ package CarTypes;
 // CarGroup hierarchy
 public abstract class CarGroup {
     protected abstract String getGroupName();
+
+    public abstract CarTemplate getCarTypes();
     protected abstract String getBodyDesign();
     protected abstract CarTemplate createCar(String variant);
 
     public void buildCars() {
         System.out.println("Building cars for " + getGroupName() + " group with " + getBodyDesign() + " body design:");
+        System.out.println("Used for " + getCarTypes().getCarType() );
 
         CarTemplate[] cars = {
                 createCar("Racing Car"),
@@ -19,10 +22,10 @@ public abstract class CarGroup {
                 createCar("Military Vehicle")
         };
 
-        for (CarTemplate car : cars) {
-            car.buildCar();
-            System.out.println();
-        }
+//        for (CarTemplate car : cars) {
+//            car.buildCar();
+//            System.out.println();
+//        }
     }
 }
 

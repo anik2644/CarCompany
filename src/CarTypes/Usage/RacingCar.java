@@ -3,14 +3,14 @@ package CarTypes.Usage;
 import CarTypes.CarTemplate;
 
 // Concrete Car Types
-public class RacingCar extends CarTemplate {
+public class RacingCar extends CarTemplate implements UseField {
     @Override
     protected String getCarType() {
         return "Racing Car";
     }
 
     @Override
-    protected int getNumberOfSeats() {
+    public int getNumberOfSeats() {
         return 1;
     }
 

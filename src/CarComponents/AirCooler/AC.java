@@ -1,8 +1,10 @@
 package CarComponents.AirCooler;
 
-// AC interface and its implementations
-public interface AC {
-    void cooling();
+import CarComponents.CarComponent;
 
-    double getPrice();
+// AC interface and its implementations
+public abstract class AC implements CarComponent {
+   abstract void cooling();
+
+   abstract double getPrice();
 }

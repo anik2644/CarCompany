@@ -17,7 +17,7 @@ public class CarWithAI extends CarTemplate {
     }
 
     @Override
-    protected int getNumberOfSeats() {
+    public int getNumberOfSeats() {
         return car.getNumberOfSeats();
     }
 

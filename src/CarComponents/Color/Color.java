@@ -1,6 +1,8 @@
 package CarComponents.Color;
 
-public enum Color {
+import CarComponents.CarComponent;
+
+public enum Color implements CarComponent {
     RED(200.0),
     WHITE(250.0),
     GREY(220.0),
@@ -14,5 +16,10 @@ public enum Color {
 
     public double getPrice() {
         return price;
+    }
+
+    @Override
+    public void assemble() {
+
     }
 }

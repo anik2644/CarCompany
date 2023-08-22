@@ -3,14 +3,14 @@ package CarTypes.Usage;
 
 import CarTypes.CarTemplate;
 
-public class PrivateCar extends CarTemplate {
+public class PrivateCar extends CarTemplate  implements  UseField{
     @Override
     protected String getCarType() {
         return "Private Car";
     }
 
     @Override
-    protected int getNumberOfSeats() {
+    public int getNumberOfSeats() {
         return 5;
     }
 

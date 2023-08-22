@@ -9,6 +9,7 @@ public class CarGroupWithAIDecorator implements Car {
         this.carGroupWithAI = carGroupWithAI;
     }
 
+
     @Override
     public void assemble() {
         carGroupWithAI.buildCars();

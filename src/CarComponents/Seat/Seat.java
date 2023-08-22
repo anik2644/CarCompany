@@ -1,7 +1,9 @@
 package CarComponents.Seat;
 
-public interface Seat {
-    int getNumberOfSeats();
+import CarComponents.CarComponent;
 
-    double getSeatPrice();
+public abstract class Seat implements CarComponent {
+   abstract   int getNumberOfSeats();
+
+   abstract double getSeatPrice();
 }

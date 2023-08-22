@@ -4,7 +4,7 @@ package CarTypes;
 public abstract class CarTemplate {
     protected abstract String getCarType();
 
-    protected abstract int getNumberOfSeats();
+    public abstract int getNumberOfSeats();
 
     protected abstract double getSeatPrice();
 

@@ -2,7 +2,7 @@ package CarComponents.AirCooler;
 
 import CarComponents.AirCooler.AC;
 
-public class HighPoweredAC implements AC {
+public class HighPoweredAC extends AC {
     @Override
     public void cooling() {
         System.out.println("High-powered AC cooling");
@@ -11,5 +11,10 @@ public class HighPoweredAC implements AC {
     @Override
     public double getPrice() {
         return 1500.0;
+    }
+
+    @Override
+    public void assemble() {
+
     }
 }
