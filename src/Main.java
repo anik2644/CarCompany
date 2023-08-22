@@ -4,8 +4,8 @@ import Automation.AutomationIndustry.AutomatedAIFactory;
 import Automation.AutomationIndustry.USAAutomatedAIFactory;
 import CarTypes.CarGroup;
 import CarTypes.CarGroupWithAIAdapter;
-import CarTypes.FerrariGroup;
-import CarTypes.FordGroup;
+import CarTypes.Brand.FerrariGroup;
+import CarTypes.Brand.FordGroup;
 
 public class Main {
     public static void main(String[] args) {

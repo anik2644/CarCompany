@@ -1,5 +1,10 @@
 package CarTypes;
 
+import CarTypes.Usage.MilitaryVehicle;
+import CarTypes.Usage.PrivateCar;
+import CarTypes.Usage.RacingCar;
+import CarTypes.Usage.SUV;
+
 // CarVariantFactory class
 public class CarVariantFactory {
     private String variant;
