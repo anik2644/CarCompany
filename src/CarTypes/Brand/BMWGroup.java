@@ -50,6 +50,17 @@ public class BMWGroup extends CarGroup implements Brand {
     }
 
     @Override
+    public int getPrice() {
+         int totalprice =0;
+        System.out.println("EnginePrice: "+ new Engine2100CC().getPrice() );
+        System.out.println("Chesis: "+ new TabularChesis().getPrice() );
+        System.out.println("Ac: "+ new HighPoweredAC().getPrice() );
+        System.out.println("Tire: "+ new WhitewallTire().getPrice() );
+       // System.out.println("Engine Price: "+skeleton);
+        return totalprice;
+    }
+
+    @Override
     protected String getBodyDesign() {
         return "Classic BMW";
     }

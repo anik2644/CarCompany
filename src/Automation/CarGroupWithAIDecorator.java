@@ -1,6 +1,7 @@
-package DecoratorDesignPattern;
+package Automation;
 
 import CarTypes.CarGroupWithAIAdapter;
+import DecoratorDesignPattern.Car;
 
 public class CarGroupWithAIDecorator implements Car {
     private final CarGroupWithAIAdapter carGroupWithAI;

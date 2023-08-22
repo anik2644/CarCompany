@@ -1,7 +1,9 @@
 package CarTypes.Brand;
 
+import CarComponents.AirCooler.HighPoweredAC;
 import CarComponents.AirCooler.LowPoweredAC;
 import CarComponents.CarSkeleton;
+import CarComponents.Chesis.BackboneChesis;
 import CarComponents.Chesis.LadderFrameChesis;
 import CarComponents.Engine.Engine1700CC;
 import CarComponents.Tire.SpareTire;
@@ -34,6 +36,17 @@ public class FordGroup extends CarGroup implements Brand {
         CarTypes =usage;
     }
 
+
+    @Override
+    public int getPrice() {
+        int totalprice =0;
+        System.out.println("EnginePrice: "+ new Engine1700CC().getPrice() );
+        System.out.println("Chesis: "+ new LadderFrameChesis().getPrice() );
+        System.out.println("Ac: "+ new HighPoweredAC().getPrice() );
+        System.out.println("Tire: "+ new SpareTire().getPrice() );
+        // System.out.println("Engine Price: "+skeleton);
+        return totalprice;
+    }
     int getNumberOfSeats() {
         return CarTypes.getNumberOfSeats();
     }

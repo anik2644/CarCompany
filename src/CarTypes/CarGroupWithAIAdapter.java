@@ -23,6 +23,11 @@ public class CarGroupWithAIAdapter extends CarGroup {
     }
 
     @Override
+    public int getPrice() {
+        return 0;
+    }
+
+    @Override
     protected String getBodyDesign() {
         return originalCarGroup.getBodyDesign() + " with AI";
     }

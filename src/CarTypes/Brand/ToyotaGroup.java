@@ -1,10 +1,14 @@
 package CarTypes.Brand;
 
+import CarComponents.AirCooler.HighPoweredAC;
 import CarComponents.AirCooler.LowPoweredAC;
 import CarComponents.CarSkeleton;
 import CarComponents.Chesis.BackboneChesis;
+import CarComponents.Chesis.LadderFrameChesis;
 import CarComponents.Engine.Engine1300CC;
+import CarComponents.Engine.Engine1700CC;
 import CarComponents.Tire.SlickTire;
+import CarComponents.Tire.SpareTire;
 import CarTypes.CarGroup;
 import CarTypes.CarTemplate;
 import CarTypes.CarVariantFactory;
@@ -44,6 +48,17 @@ public class ToyotaGroup extends CarGroup implements Brand {
     @Override
     public CarTemplate getCarTypes() {
         return this.CarTypes;
+    }
+
+    @Override
+    public int getPrice() {
+        int totalprice =0;
+        System.out.println("EnginePrice: "+ new Engine1300CC().getPrice() );
+        System.out.println("Chesis: "+ new BackboneChesis().getPrice() );
+        System.out.println("Ac: "+ new LowPoweredAC().getPrice() );
+        System.out.println("Tire: "+ new SlickTire().getPrice() );
+        // System.out.println("Engine Price: "+skeleton);
+        return totalprice;
     }
 
     @Override

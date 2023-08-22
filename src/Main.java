@@ -1,7 +1,10 @@
+import Automation.AutomatedAI;
+import Automation.AutomationIndustry.Ai_Factory;
 import Automation.AutomationIndustry.AsiaAutomatedAIFactory;
 import Automation.AutomationIndustry.AutomatedAIFactory;
 
 import Automation.AutomationIndustry.USAAutomatedAIFactory;
+import Automation.USABasedAutomatedAI;
 import CarTypes.Brand.BMWGroup;
 import CarTypes.Brand.Brand;
 import CarTypes.CarFacade;
@@ -27,10 +30,14 @@ public class Main {
         CarTemplate car = new RacingCar();
         BMWGroup myRacingCar = new BMWGroup(car);
         myRacingCar.buildCars();
+        myRacingCar.getPrice();
 
 
+        AutomatedAI targetAi = new USABasedAutomatedAI();
 
-        
+        AutomatedAIFactory ai = new USAAutomatedAIFactory();
+        CarGroupWithAIAdapter aiCar = new CarGroupWithAIAdapter(myRacingCar,ai);
+
 
 
         // Observer Pattern

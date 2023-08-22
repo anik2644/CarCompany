@@ -8,12 +8,16 @@ public abstract class CarGroup {
     protected abstract String getGroupName();
 
     public abstract CarTemplate getCarTypes();
+    public abstract int getPrice();
+
     protected abstract String getBodyDesign();
+
     protected abstract CarTemplate createCar(String variant);
+
 
     public void buildCars() {
         System.out.println("Building cars for " + getGroupName() + " group with " + getBodyDesign() + " body design:");
-        System.out.println("Used for " + getCarTypes().getCarType() );
+        System.out.println("Used for " + getCarTypes().getCarType());
 
         CarTemplate[] cars = {
                 createCar("Racing Car"),
@@ -26,6 +30,15 @@ public abstract class CarGroup {
 //            car.buildCar();
 //            System.out.println();
 //        }
+    }
+
+
+    public void pricing() {
+        System.out.println("Price of the car is " + getGroupName() + " group with " + getBodyDesign() + " body design:");
+        //System.out.println("Used for " + getCarTypes().getCarType());
+
+
+
     }
 }
 
